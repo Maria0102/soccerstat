@@ -13,8 +13,6 @@ const MatchList = (section) => {
       let { id } = params;
     
       axios.get(`${process.env.REACT_APP_API_URL}/${section.section}/${id}/matches/`, { headers: {"X-Auth-Token" : process.env.REACT_APP_TOKEN} })
-      //axios.get(`${process.env.REACT_APP_API_URL}/teams/${id}/matches/`, { headers: {"X-Auth-Token" : process.env.REACT_APP_TOKEN} })
-      //////axios.get(`${process.env.REACT_APP_API_URL}/teams/`, { headers: {"X-Auth-Token" : process.env.REACT_APP_TOKEN} })
       .then(res => {
         const matches = res.data.matches;
         setMatches(matches);
