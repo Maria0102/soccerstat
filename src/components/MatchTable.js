@@ -2,12 +2,6 @@ import React from 'react';
 import './Components.css';
 
 const MatchTable = (matches) => {
-    console.log(matches.matches);
-    console.log(matches.name);
-    //console.log(name);
-    //const matches = props.matches;
-    //const name = props.name;
-    //const matches = [];
     const name2= matches.name;
 
     const formateDate = (date) => {
@@ -25,7 +19,7 @@ const MatchTable = (matches) => {
       //09:30
       return timeString;
     }
-    //console.log(name);
+
     return (
       <div>
       <table>
